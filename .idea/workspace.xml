@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bf7a18f-16b0-4417-a096-55dfd71f06be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Aula02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aula02.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/Aula02Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/META-INF/Aula02.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aula02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Exer01.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Aula02/Aula02Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula02/Aula02Kt.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -38,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Kotlin.Aula02Kt.executor": "Run",
+    "Kotlin.Exer01Kt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -46,8 +49,8 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Aula02Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Aula02Kt" />
+    <configuration name="Exer01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exer01Kt" />
       <module name="Aula02" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,7 +58,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Aula02Kt" />
+        <item itemvalue="Kotlin.Exer01Kt" />
       </list>
     </recent_temporary>
   </component>
