@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bf7a18f-16b0-4417-a096-55dfd71f06be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aula02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Exer01.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/Aula02Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula02/Aula02Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Aula02/Aula02Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Aula02/Exer01Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula02/Exer01Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Aula02/META-INF/Aula02.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula02/META-INF/Aula02.kotlin_module" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +43,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Kotlin.Aula02Kt.executor": "Run",
+    "Kotlin.DesafioKt.executor": "Run",
     "Kotlin.Exer01Kt.executor": "Run",
+    "Kotlin.Exer03Kt.executor": "Run",
+    "Kotlin.Exer04Kt.executor": "Run",
+    "Kotlin.Exer05Kt.executor": "Run",
+    "Kotlin.Exer06Kt.executor": "Run",
+    "Kotlin.Exer07Kt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
