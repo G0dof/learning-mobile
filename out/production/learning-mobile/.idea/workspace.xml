@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bf7a18f-16b0-4417-a096-55dfd71f06be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Aula02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning-mobile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Desafio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Desafio.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer01.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer01.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer02.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer03.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer04.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer05.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer06.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer06.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer8.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,44 +52,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Exer1.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Aula02Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.DesafioKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer01Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer02Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer03Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer04Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer05Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer06Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer07Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer1Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer3Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer4Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Exer5Kt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Exer1.executor": "Run",
+    "Application.Principal.executor": "Run",
+    "Kotlin.Aula02Kt.executor": "Run",
+    "Kotlin.DesafioKt.executor": "Run",
+    "Kotlin.Exer01Kt.executor": "Run",
+    "Kotlin.Exer02Kt.executor": "Run",
+    "Kotlin.Exer03Kt.executor": "Run",
+    "Kotlin.Exer04Kt.executor": "Run",
+    "Kotlin.Exer05Kt.executor": "Run",
+    "Kotlin.Exer06Kt.executor": "Run",
+    "Kotlin.Exer07Kt.executor": "Run",
+    "Kotlin.Exer1Kt.executor": "Run",
+    "Kotlin.Exer3Kt.executor": "Run",
+    "Kotlin.Exer4Kt.executor": "Run",
+    "Kotlin.Exer5Kt.executor": "Run",
+    "Kotlin.Exer8Kt.executor": "Run",
+    "Kotlin.Exer9Kt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/autologon/IdeaProjects/learning-mobile",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Aula02" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Exer4Kt">
-    <configuration name="Exer1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ListaExerciciosJava.Exer1" />
+  <component name="RunManager" selected="Application.Principal">
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aulas.Aula03.SistemaDeVotacao.Principal" />
       <module name="learning-mobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ListaExerciciosJava.*" />
+          <option name="PATTERN" value="Aulas.Aula03.SistemaDeVotacao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,15 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exer1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exer1Kt" />
-      <module name="learning-mobile" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exer3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exer3Kt" />
+    <configuration name="Exer10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exer10Kt" />
       <module name="learning-mobile" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,8 +115,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exer5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exer5Kt" />
+    <configuration name="Exer8Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exer8Kt" />
+      <module name="learning-mobile" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exer9Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exer9Kt" />
       <module name="learning-mobile" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,13 +131,20 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal" />
+        <item itemvalue="Kotlin.Exer10Kt" />
+        <item itemvalue="Kotlin.Exer9Kt" />
+        <item itemvalue="Kotlin.Exer8Kt" />
         <item itemvalue="Kotlin.Exer4Kt" />
-        <item itemvalue="Kotlin.Exer5Kt" />
-        <item itemvalue="Kotlin.Exer3Kt" />
-        <item itemvalue="Kotlin.Exer1Kt" />
-        <item itemvalue="Application.Exer1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
