@@ -1,0 +1,606 @@
+Index: out/production/learning-mobile/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_22\" default=\"true\" project-jdk-name=\"openjdk-22\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/out\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/production/learning-mobile/.idea/misc.xml b/out/production/learning-mobile/.idea/misc.xml
+--- a/out/production/learning-mobile/.idea/misc.xml	(revision c81c55f8e52b5e3a4c7fd382ce3ca94834832d1c)
++++ b/out/production/learning-mobile/.idea/misc.xml	(date 1725206839455)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: Aulas/Aula03/SistemaDeVotacao/Partido.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Aulas/Aula03/SistemaDeVotacao/Partido.java b/Aulas/Aula03/SistemaDeVotacao/Partido.java
+new file mode 100644
+--- /dev/null	(date 1725206839455)
++++ b/Aulas/Aula03/SistemaDeVotacao/Partido.java	(date 1725206839455)
+@@ -0,0 +1,23 @@
++package Aulas.Aula03.SistemaDeVotacao;
++
++public class Partido {
++    private String nome;
++    private int votos;
++
++    public Partido(String nome) {
++        this.nome = nome;
++        this.votos = 0;
++    }
++
++    public String getNome() {
++        return nome;
++    }
++
++    public int getVotos() {
++        return votos;
++    }
++
++    public void adicionarVoto() {
++        this.votos++;
++    }
++}
+Index: Aulas/Aula03/SistemaDeVotacao/Candidato.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Aulas/Aula03/SistemaDeVotacao/Candidato.java b/Aulas/Aula03/SistemaDeVotacao/Candidato.java
+new file mode 100644
+--- /dev/null	(date 1725206839454)
++++ b/Aulas/Aula03/SistemaDeVotacao/Candidato.java	(date 1725206839454)
+@@ -0,0 +1,36 @@
++package Aulas.Aula03.SistemaDeVotacao;
++
++public class Candidato implements Votavel{
++    private String nome;
++    private Partido partido;
++    private int numero;
++    private int votos;
++
++    public Candidato(String nome, Partido partido, int numero) {
++        this.nome = nome;
++        this.partido = partido;
++        this.numero = numero;
++        this.votos = 0;
++    }
++
++    @Override
++    public void adicionarVoto() {
++        this.votos++;
++        this.partido.adicionarVoto();
++    }
++
++    @Override
++    public int getVotos() {return this.votos;}
++
++    public String getNome() {
++        return nome;
++    }
++
++    public Partido getPartido() {
++        return partido;
++    }
++
++    public int getNumero() {
++        return numero;
++    }
++}
+Index: Aulas/Aula03/SistemaDeVotacao/Votavel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Aulas/Aula03/SistemaDeVotacao/Votavel.java b/Aulas/Aula03/SistemaDeVotacao/Votavel.java
+new file mode 100644
+--- /dev/null	(date 1725206839455)
++++ b/Aulas/Aula03/SistemaDeVotacao/Votavel.java	(date 1725206839455)
+@@ -0,0 +1,6 @@
++package Aulas.Aula03.SistemaDeVotacao;
++
++public interface Votavel {
++    void adicionarVoto();
++    int getVotos();
++}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_22\" default=\"true\" project-jdk-name=\"openjdk-22\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/out\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision c81c55f8e52b5e3a4c7fd382ce3ca94834832d1c)
++++ b/.idea/misc.xml	(date 1725206839454)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4bf7a18f-16b0-4417-a096-55dfd71f06be\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Kotlin Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;G0dof&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/G0dof/learning-mobile.git&quot;,\n    &quot;accountId&quot;: &quot;ca39ee1f-1d0e-4f32-8e58-76a918dc7ce0&quot;\n  }\n}</component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2ktevxptu4FrW2nvMlwJrd5dMyI\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Exer1.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Aula02Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.DesafioKt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer01Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer02Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer03Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer04Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer05Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer06Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer07Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer10Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer1Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer3Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer4Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer5Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer7Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer8Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer9Kt.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Aula02\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Kotlin.Exer9Kt\">\n    <configuration name=\"Exer10Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer10Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer5Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer5Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer7Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer7Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer8Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer8Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer9Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer9Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Kotlin.Exer9Kt\" />\n        <item itemvalue=\"Kotlin.Exer5Kt\" />\n        <item itemvalue=\"Kotlin.Exer7Kt\" />\n        <item itemvalue=\"Kotlin.Exer10Kt\" />\n        <item itemvalue=\"Kotlin.Exer8Kt\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4bf7a18f-16b0-4417-a096-55dfd71f06be\" name=\"Changes\" comment=\"\" />\n      <created>1724107534476</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1724107534476</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <breakpoint enabled=\"true\" type=\"java-exception\">\n          <properties class=\"java.lang.NumberFormatException\" package=\"java.lang\" />\n          <option name=\"timeStamp\" value=\"1\" />\n        </breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c81c55f8e52b5e3a4c7fd382ce3ca94834832d1c)
++++ b/.idea/workspace.xml	(date 1725207787838)
+@@ -5,14 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4bf7a18f-16b0-4417-a096-55dfd71f06be" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,6 +17,8 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Kotlin Class" />
++        <option value="Interface" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+@@ -55,58 +51,64 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Exer1.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Aula02Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.DesafioKt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer01Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer02Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer03Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer04Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer05Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer06Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer07Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer10Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer1Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer3Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer4Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer5Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer7Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer8Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer9Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Exer1.executor": "Run",
++    "Application.Principal.executor": "Run",
++    "Kotlin.Aula02Kt.executor": "Run",
++    "Kotlin.DesafioKt.executor": "Run",
++    "Kotlin.Exer01Kt.executor": "Run",
++    "Kotlin.Exer02Kt.executor": "Run",
++    "Kotlin.Exer03Kt.executor": "Run",
++    "Kotlin.Exer04Kt.executor": "Run",
++    "Kotlin.Exer05Kt.executor": "Run",
++    "Kotlin.Exer06Kt.executor": "Run",
++    "Kotlin.Exer07Kt.executor": "Run",
++    "Kotlin.Exer1Kt.executor": "Run",
++    "Kotlin.Exer3Kt.executor": "Run",
++    "Kotlin.Exer4Kt.executor": "Run",
++    "Kotlin.Exer5Kt.executor": "Run",
++    "Kotlin.Exer8Kt.executor": "Run",
++    "Kotlin.Exer9Kt.executor": "Run",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "main",
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/Users/autologon/IdeaProjects/learning-mobile",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "preferences.keymap"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/Aula02" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Kotlin.Exer9Kt">
+-    <configuration name="Exer10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Exer10Kt" />
++  <component name="RunManager" selected="Application.Principal">
++    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Aulas.Aula03.SistemaDeVotacao.Principal" />
+       <module name="learning-mobile" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Aulas.Aula03.SistemaDeVotacao.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Exer5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Exer5Kt" />
++    <configuration name="Exer10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Exer10Kt" />
+       <module name="learning-mobile" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Exer7Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Exer7Kt" />
++    <configuration name="Exer4Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Exer4Kt" />
+       <module name="learning-mobile" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+@@ -128,14 +130,21 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Kotlin.Exer9Kt" />
+-        <item itemvalue="Kotlin.Exer5Kt" />
+-        <item itemvalue="Kotlin.Exer7Kt" />
++        <item itemvalue="Application.Principal" />
+         <item itemvalue="Kotlin.Exer10Kt" />
++        <item itemvalue="Kotlin.Exer9Kt" />
+         <item itemvalue="Kotlin.Exer8Kt" />
++        <item itemvalue="Kotlin.Exer4Kt" />
+       </list>
+     </recent_temporary>
+   </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
++      </set>
++    </attachedChunks>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -154,6 +163,11 @@
+           <properties class="java.lang.NumberFormatException" package="java.lang" />
+           <option name="timeStamp" value="1" />
+         </breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/Aulas/Aula03/SistemaDeVotacao/Principal.java</url>
++          <line>24</line>
++          <option name="timeStamp" value="2" />
++        </line-breakpoint>
+       </breakpoints>
+     </breakpoint-manager>
+   </component>
+Index: Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java b/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java
+new file mode 100644
+--- /dev/null	(date 1725206839455)
++++ b/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java	(date 1725206839455)
+@@ -0,0 +1,62 @@
++package Aulas.Aula03.SistemaDeVotacao;
++
++import java.util.ArrayList;
++import java.util.List;
++
++public class SistemaVotacao {
++    private List<Candidato> candidatos;
++    private List<Partido> partidos;
++
++    public SistemaVotacao() {
++        this.candidatos = new ArrayList<>();
++        this.partidos = new ArrayList<>();
++    }
++
++    public void adicionarPartido(Partido partido) {
++        this.partidos.add(partido);
++    }
++
++    public void adicionarCandidato(Candidato candidato) {
++        this.candidatos.add(candidato);
++    }
++
++    public Partido buscarPartidoPorNome(String nome) {
++        for (Partido partido : partidos) {
++            if (partido.getNome().equalsIgnoreCase(nome)) return partido;
++        }
++        return null;
++    }
++
++    public void votar(int numeroCandidato) {
++        for (Candidato candidato : candidatos) {
++            if (candidato.getNumero() == numeroCandidato) {
++                candidato.adicionarVoto();
++                System.out.printf("Voto registrado para %s do partido %s", candidato.getNome(), candidato.getPartido().getNome());
++            }
++        }
++        System.out.println("Candidato não encontrado.");
++    }
++
++    public void exibirResultados() {
++        if (candidatos.isEmpty()) {
++            System.out.println("Nenhum candidato registrado");
++        }
++
++        Candidato candidatoVencedor = candidatos.get(0);
++        Partido partidoVencedor = partidos.get(0);
++
++
++        for (Candidato candidato : candidatos) {
++            if (candidato.getVotos() > candidatoVencedor.getVotos()) {
++                candidatoVencedor = candidato;
++            }
++        }
++        for (Partido partido : partidos) {
++            if (partido.getVotos() > partidoVencedor.getVotos()) {
++                partidoVencedor = partido;
++            }
++        }
++        System.out.printf("Candidato vencedor: %s", candidatoVencedor.getNome());
++        System.out.printf("Partido vencedor: %s", partidoVencedor.getNome());
++    }
++}
+Index: Aulas/Aula03/SistemaDeVotacao/Principal.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Aulas/Aula03/SistemaDeVotacao/Principal.java b/Aulas/Aula03/SistemaDeVotacao/Principal.java
+new file mode 100644
+--- /dev/null	(date 1725206839455)
++++ b/Aulas/Aula03/SistemaDeVotacao/Principal.java	(date 1725206839455)
+@@ -0,0 +1,57 @@
++package Aulas.Aula03.SistemaDeVotacao;
++
++import java.util.Scanner;
++
++public class Principal {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        SistemaVotacao sistema = new SistemaVotacao();
++
++        while (true) {
++            System.out.println("Menu: ");
++            System.out.println("1. Criar Partido: ");
++            System.out.println("2. Criar Candidato: ");
++            System.out.println("3. Votar: ");
++            System.out.println("4. Exibir Resultados: ");
++            System.out.println("5. Sair: ");
++            int opcao = sc.nextInt();
++            sc.nextLine(); // Limpar buffer do Scanner
++
++            switch (opcao) {
++                case 1:
++                    System.out.print("Digite o nome do partido: ");
++                    String nomePartido = sc.nextLine();
++                    Partido partido = new Partido(nomePartido);
++                    sistema.adicionarPartido(partido);
++                    System.out.printf("Partido %s criado com sucesso\n", nomePartido);
++                    break;
++                case 2:
++                    System.out.print("Digite o nome do candidato: ");
++                    String nomeCandidato = sc.nextLine();
++                    System.out.print("Digite o nome do partido do candidato: ");
++                    String nomePartidoCandidato = sc.nextLine();
++                    int numeroCandidato = sc.nextInt();
++                    sc.nextLine();
++
++                    Partido partidoCandidato = sistema.buscarPartidoPorNome(nomePartidoCandidato);
++                    if (partidoCandidato != null) {
++                        Candidato candidato = new Candidato(nomeCandidato, partidoCandidato, numeroCandidato);
++                        sistema.adicionarCandidato(candidato);
++                    } else System.out.println("Partido não encontrado. Crie o partido primeiro");
++                    break;
++                case 3:
++                    System.out.print("Digite o número do candidato para votar: ");
++                    int numeroVotoCandidato = sc.nextInt();
++                    sistema.votar(numeroVotoCandidato);
++                case 4:
++                    sistema.exibirResultados();
++                    break;
++                case 5:
++                    System.out.println("Saindo...");
++                    break;
++                default:
++                    System.out.println("Opção inválida! Tente novamente.");
++            }
++        }
++    }
++}
+Index: out/production/learning-mobile/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4bf7a18f-16b0-4417-a096-55dfd71f06be\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Kotlin Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;G0dof&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/G0dof/learning-mobile.git&quot;,\n    &quot;accountId&quot;: &quot;ca39ee1f-1d0e-4f32-8e58-76a918dc7ce0&quot;\n  }\n}</component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2ktevxptu4FrW2nvMlwJrd5dMyI\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Exer1.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Aula02Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.DesafioKt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer01Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer02Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer03Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer04Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer05Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer06Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer07Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer10Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer1Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer3Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer4Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer5Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer7Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer8Kt.executor&quot;: &quot;Run&quot;,\n    &quot;Kotlin.Exer9Kt.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Aula02\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Kotlin.Exer9Kt\">\n    <configuration name=\"Exer10Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer10Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer5Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer5Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer7Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer7Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer8Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer8Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exer9Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Exer9Kt\" />\n      <module name=\"learning-mobile\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Kotlin.Exer9Kt\" />\n        <item itemvalue=\"Kotlin.Exer5Kt\" />\n        <item itemvalue=\"Kotlin.Exer7Kt\" />\n        <item itemvalue=\"Kotlin.Exer10Kt\" />\n        <item itemvalue=\"Kotlin.Exer8Kt\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4bf7a18f-16b0-4417-a096-55dfd71f06be\" name=\"Changes\" comment=\"\" />\n      <created>1724107534476</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1724107534476</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <breakpoint enabled=\"true\" type=\"java-exception\">\n          <properties class=\"java.lang.NumberFormatException\" package=\"java.lang\" />\n          <option name=\"timeStamp\" value=\"1\" />\n        </breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/production/learning-mobile/.idea/workspace.xml b/out/production/learning-mobile/.idea/workspace.xml
+--- a/out/production/learning-mobile/.idea/workspace.xml	(revision c81c55f8e52b5e3a4c7fd382ce3ca94834832d1c)
++++ b/out/production/learning-mobile/.idea/workspace.xml	(date 1725207788519)
+@@ -5,14 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4bf7a18f-16b0-4417-a096-55dfd71f06be" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/Exer10Kt.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/Exer7Kt.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learning-mobile/Exer9Kt.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,6 +18,8 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Kotlin Class" />
++        <option value="Interface" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+@@ -55,58 +52,64 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Exer1.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Aula02Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.DesafioKt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer01Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer02Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer03Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer04Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer05Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer06Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer07Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer10Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer1Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer3Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer4Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer5Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer7Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer8Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;Kotlin.Exer9Kt.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Exer1.executor": "Run",
++    "Application.Principal.executor": "Run",
++    "Kotlin.Aula02Kt.executor": "Run",
++    "Kotlin.DesafioKt.executor": "Run",
++    "Kotlin.Exer01Kt.executor": "Run",
++    "Kotlin.Exer02Kt.executor": "Run",
++    "Kotlin.Exer03Kt.executor": "Run",
++    "Kotlin.Exer04Kt.executor": "Run",
++    "Kotlin.Exer05Kt.executor": "Run",
++    "Kotlin.Exer06Kt.executor": "Run",
++    "Kotlin.Exer07Kt.executor": "Run",
++    "Kotlin.Exer1Kt.executor": "Run",
++    "Kotlin.Exer3Kt.executor": "Run",
++    "Kotlin.Exer4Kt.executor": "Run",
++    "Kotlin.Exer5Kt.executor": "Run",
++    "Kotlin.Exer8Kt.executor": "Run",
++    "Kotlin.Exer9Kt.executor": "Run",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "main",
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/Users/autologon/IdeaProjects/learning-mobile",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "preferences.keymap"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/Aula02" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Kotlin.Exer9Kt">
+-    <configuration name="Exer10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Exer10Kt" />
++  <component name="RunManager" selected="Application.Principal">
++    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Aulas.Aula03.SistemaDeVotacao.Principal" />
+       <module name="learning-mobile" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Aulas.Aula03.SistemaDeVotacao.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Exer5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Exer5Kt" />
++    <configuration name="Exer10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Exer10Kt" />
+       <module name="learning-mobile" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Exer7Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Exer7Kt" />
++    <configuration name="Exer4Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Exer4Kt" />
+       <module name="learning-mobile" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+@@ -128,13 +131,20 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Kotlin.Exer9Kt" />
+-        <item itemvalue="Kotlin.Exer5Kt" />
+-        <item itemvalue="Kotlin.Exer7Kt" />
++        <item itemvalue="Application.Principal" />
+         <item itemvalue="Kotlin.Exer10Kt" />
++        <item itemvalue="Kotlin.Exer9Kt" />
+         <item itemvalue="Kotlin.Exer8Kt" />
++        <item itemvalue="Kotlin.Exer4Kt" />
+       </list>
+     </recent_temporary>
++  </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
++      </set>
++    </attachedChunks>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">

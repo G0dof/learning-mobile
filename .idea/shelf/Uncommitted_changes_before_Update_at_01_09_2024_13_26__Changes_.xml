@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]" date="1725208005271" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 01/09/2024 13:26 [Changes]" />
+  <binary>
+    <option name="AFTER_PATH" value="out/production/learning-mobile/Aulas/Aula03/SistemaDeVotacao/Votavel.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]/Votavel.class" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="out/production/learning-mobile/Aulas/Aula03/SistemaDeVotacao/Candidato.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]/Candidato.class" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="out/production/learning-mobile/Aulas/Aula03/SistemaDeVotacao/Partido.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]/Partido.class" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="out/production/learning-mobile/Aulas/Aula03/SistemaDeVotacao/Principal.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]/Principal.class" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="out/production/learning-mobile/Aulas/Aula03/SistemaDeVotacao/SistemaVotacao.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]/SistemaVotacao.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/learning-mobile/ListaExerciciosJava/Exer1.class" />
+    <option name="AFTER_PATH" value="out/production/learning-mobile/ListaExerciciosJava/Exer1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26_[Changes]/Exer1.class" />
+  </binary>
+</changelist>
