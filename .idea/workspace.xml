@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bf7a18f-16b0-4417-a096-55dfd71f06be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Aula02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning-mobile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2024_13_26__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Desafio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Desafio.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer01.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer01.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer02.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer03.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer04.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer05.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02/Exer06.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Aulas/Aula02/Exer06.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer10.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer7.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer8.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ListaExerciciosKt/Exer9.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,7 +36,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/G0dof/learning-mobile.git&quot;,
-    &quot;accountId&quot;: &quot;ca39ee1f-1d0e-4f32-8e58-76a918dc7ce0&quot;
+    &quot;accountId&quot;: &quot;1799c6fb-b0ff-4e30-bf70-7caa6cd1ea1c&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -82,12 +73,19 @@
     "Kotlin.Exer9Kt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/autologon/AndroidStudioProjects/learning-mobile/Aulas/Aula05/ConsolesAntigos",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
