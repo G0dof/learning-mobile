@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CustomButtons</string>
+    <string name="botao_envio">Enviar</string>
+    <string name="boas_vindas">Seja bem vindo</string>
+    <string name="formulario">Preencher formulário</string>
+    <string name="gerador_uuid">Gerador UUID</string>
+</resources>

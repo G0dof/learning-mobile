@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde_menta_suave">#B4D6CD</color>
+    <color name="amarelo_sol_radiante">#FFDA76</color>
+    <color name="rosa_coral">#FF4E88</color>
+    <color name="magenta_vibrante">#E90074</color>
+    <color name="azul_profundo">#03336E</color>
+    <color name="azul_claro">#6EACDA</color>
+</resources>
